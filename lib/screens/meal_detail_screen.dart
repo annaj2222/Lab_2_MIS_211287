@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import '../models/meal_detail.dart';
+import '../providers/favorite_provider.dart';
 import '../widgets/ingredient_list.dart';
 
 class MealDetailScreen extends StatelessWidget {
@@ -11,6 +13,22 @@ class MealDetailScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(mealDetail.strMeal),
+        actions: [
+          Consumer<FavoriteProvider>(
+            builder: (context, fav, _) {
+              final isFav = fav.isFavorite(mealDetail.idMeal);
+              return IconButton(
+                icon: Icon(
+                  isFav ? Icons.star : Icons.star_border,
+                  color: Colors.yellow,
+                ),
+                onPressed: () {
+                  fav.toggleFavorite(mealDetail);
+                },
+              );
+            },
+          ),
+        ],
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(12),

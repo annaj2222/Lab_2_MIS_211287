@@ -32,4 +32,16 @@ samples, guidance on mobile development, and a full API reference.
 ![Image 7](/screenshots/Screenshot_7.png)
 <br/>
 ![Image 8](/screenshots/Screenshot_8.png)
+<br/>
+# Screenshots from Lab 3
+
+![Image 9](/screenshots/Screenshot_9.png)
+<br/>
+![Image 10](/screenshots/Screenshot_10.png)
+<br/>
+![Image 11](/screenshots/Screenshot_11.png)
+<br/>
+![Image 12](/screenshots/Screenshot_12.png)
+<br/>
+![Image 13](/screenshots/Screenshot_13.png)
 
